@@ -1,0 +1,207 @@
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.card {
+  background-color: #b5c0c8;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+
+}
+
+
+body {
+  background-color: rgba(164,153,235,255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.income-expense-container {
+  background-color: #fff;
+  box-shadow: var(--box--shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: 8px;
+
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  text-align: center;
+  letter-spacing: 1px;
+
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+
+.income-expense-container>div {
+  flex: 1;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.income-expense-container>div:first-of-type {
+  border-right: 1px solid #dedede;
+  border-radius: 10px;
+}
+
+
+.money-less {
+  color: #c0392b;
+  text-align: center;
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+
+}
+
+
+
+.btn {
+
+  background-color: #9376E0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+
+  
+}
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.money {
+  font-size: 2;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.money-surplus {
+
+  font-weight: bold;
+  color: #2ecc71;
+  text-align: center;
+
+
+}
+
+
+.list li {
+
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  margin-left: 8px;
+  background-color: #fff;
+  box-shadow: var(--box--shadow);
+  color: #333;
+  display: flex;
+}
+
+.list li.plus {
+  border-right: 6px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 6px solid #c0392b;
+}
+
+
+.delete-btn {
+
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  transform: translate(-100%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  margin-right: 2px;
+
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+
